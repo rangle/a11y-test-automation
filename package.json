@@ -1,0 +1,14 @@
+{
+  "name": "a11y-test-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rangle/a11y-test-automation.git",
+  "author": "Thomas Schemmer <thomas.schemmer@rangle.io>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "app",
+    "ds",
+    "packages/*"
+  ]
+}
