@@ -1,12 +1,19 @@
 {
   "name": "a11y-test-automation",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:rangle/a11y-test-automation.git",
   "author": "Thomas Schemmer <thomas.schemmer@rangle.io>",
   "license": "MIT",
   "private": true,
   "workspaces": [
+    "packages/app-ds/packages/ds",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "yarn workspace ds build",
+    "clean": "rimraf ./**/node_modules ./**/dist"
+  }
 }
