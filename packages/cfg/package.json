@@ -1,5 +1,5 @@
 {
-  "name": "@a11y-test-automation/config",
+  "name": "cfg",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT"

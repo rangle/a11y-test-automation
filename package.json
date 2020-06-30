@@ -7,8 +7,6 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "app",
-    "ds",
     "packages/*"
   ]
 }
