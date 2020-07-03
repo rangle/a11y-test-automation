@@ -6,14 +6,15 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/app-ds/packages/ds",
     "packages/*"
   ],
   "dependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "lerna": "^3.22.0"
   },
   "scripts": {
-    "build": "yarn workspace ds build",
+    "dev": "lerna run --scope app start",
+    "build": "lerna run build",
     "clean": "rimraf ./**/node_modules ./**/dist"
   }
 }
