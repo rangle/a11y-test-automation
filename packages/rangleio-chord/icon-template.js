@@ -4,7 +4,6 @@ function template(
   { imports, componentName, props, jsx, exports }
 ) {
   const typeScriptTpl = template.smart({ plugins: ['typescript'] });
-
   return typeScriptTpl.ast`
     import React, { forwardRef, useState } from 'react';
     import styled from 'styled-components';
@@ -27,7 +26,7 @@ function template(
       SVGSVGElement,
       React.SVGProps<SVGSVGElement> & { title?: any; }
     >(({ title, ...props }, svgRef) => {
-        const [titleId] = useState(() => uuid());
+        const [titleId] = useState(() => (title? uuid(): undefined));
 
         return (
           ${jsx}

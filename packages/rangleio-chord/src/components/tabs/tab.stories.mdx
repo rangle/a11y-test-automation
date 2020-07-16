@@ -1,0 +1,33 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Tab } from './tab';
+import { Box, Icons, Flex } from '../';
+
+<Meta title="Components/Tabs/Tab" component={Tab} />
+
+# Basic tab component
+
+The Tab
+
+### Primary
+
+<Preview withToolbar>
+  <Story name="primary">
+    <Box>
+      <Flex mb={3}>
+        <Tab icon={<Icons.CheckCircle fontSize={4} />} label="Correct" />
+      </Flex>
+      <Flex mb={3}>
+        <Tab icon={<Icons.CheckCircle fontSize={4} />} arial-label="Correct" />
+      </Flex>
+    </Box>
+  </Story>
+</Preview>
+
+
+### Accessibility
+
+
+
+## Component Props
+
+<Props of={Tab} />

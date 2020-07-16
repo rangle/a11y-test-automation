@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "lib": ["dom", "esnext"],
+      "importHelpers": true,
+      "declaration": true,
+      "sourceMap": true,
+      "rootDir": "./",
+      "strict": true,
+      "skipLibCheck": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true,
+      "noImplicitThis": true,
+      "alwaysStrict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "paths": {
+        "@rangleio/chord": ["./packages/rangleio-chord/src"],
+        "@rangleio/chord/*": ["./packages/rangleio-chord/src/*"],
+        "@rangleio/test/*": ["./packages/rangleio-test/*"]
+      },
+      "jsx": "react",
+      "esModuleInterop": true,
+      "allowJs": true
+    },
+    "exclude": ["**/build/"]
+  }
+  

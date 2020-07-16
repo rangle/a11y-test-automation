@@ -10,3 +10,11 @@ declare module '@styled-system/css' {
   const css: any;
   export default css;
 }
+
+declare namespace jest {
+  interface Matchers<R> {
+    toBeInaccessible():void;
+    toHaveAccessibleName(name: string): void;
+    toHaveAccessibleDescription(name: string): void;
+  }
+}

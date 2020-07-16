@@ -15,6 +15,10 @@
   "scripts": {
     "dev": "lerna run --scope app start",
     "build": "lerna run build",
-    "clean": "rimraf ./**/node_modules ./**/dist"
+    "storybook": "lerna run --scope \"@rangleio/*\" storybook",
+    "test": "lerna run test",
+    "test:e2e": "lerna run test:e2e",
+    "test:watch": "yarn test:unit --watch",
+    "clean": "rimraf ./**/node_modules ./**/dist ./**/build"
   }
 }

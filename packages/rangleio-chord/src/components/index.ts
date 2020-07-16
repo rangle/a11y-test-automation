@@ -18,3 +18,4 @@ export * from './spinner';
 export * from './stack';
 export * from './text';
 export * from './text-area';
+export * from './tabs';

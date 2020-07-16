@@ -1,0 +1,9 @@
+{
+    "name": "jest-a11y-matchers",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "dependencies": {
+        "dom-accessibility-api": "^0.4.6"
+    },
+    "devDependencies": {}
+}
